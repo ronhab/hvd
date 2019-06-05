@@ -8,7 +8,7 @@ class DataSet:
 
     def load(self, filename, key=None):
         self.logger.info('Started loading data \'%s\'' % filename)
-        with np.load(filename, encoding='bytes') as npz:
+        with np.load(filename, encoding='bytes', allow_pickle=True) as npz:
             key = npz.files[0] if key is None else npz.files[key]
             data = npz[key]
         self.logger.info('Data loaded #%d' % len(data))
