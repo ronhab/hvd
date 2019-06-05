@@ -13,7 +13,7 @@ class WordExtractor:
     @classmethod
     def create_keywords(cls):
         # http://en.cppreference.com/w/cpp/keyword
-        with open(os.path.join('var', 'cpp_keywords.txt')) as f:
+        with open(os.path.join('../var', 'cpp_keywords.txt')) as f:
             cpp_keywords = f.readlines()
         return [w.strip() for w in cpp_keywords]
 
