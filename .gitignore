@@ -66,3 +66,6 @@ target/
 # App added
 patch/
 !var/cpp_keywords.txt
+
+# VSCode
+.vscode
