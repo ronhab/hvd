@@ -69,3 +69,6 @@ patch/
 
 # VSCode
 .vscode
+
+# data files
+*.npz
